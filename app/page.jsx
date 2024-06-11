@@ -7,6 +7,7 @@ import Content from '../components/Content';
 
 export default function Index() {
   const { user, setUser } = useAppContext();
+  new Error('llllll');
   useEffect(() => {
     fetch('/api/accessToken')
       .then(res => res.json())
