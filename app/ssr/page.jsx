@@ -5,6 +5,7 @@ import Highlight from '../../components/Highlight';
 
 export default withPageAuthRequired(
   async function SSRPage() {
+    console.log('logging in the server?');
     const { user } = await getSession();
     return (
       <>
